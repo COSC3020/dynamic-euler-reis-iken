@@ -1,16 +1,9 @@
-function factorial(n) {
-    let result = 1;
-    for (let i = 1; i <= n; i++) {
-        result *= i;
-    }
-    return result;
-}
-
 function e(n) {
-    let eValues = new Array(n + 1);
-    eValues[0] = 1;
+    let eVal = 1;
+    let factorialVal = 1;
     for (let i = 1; i <= n; i++) {
-        eValues[i] = eValues[i - 1] + 1.0 / factorial(i);
+        factorialVal *= i;
+        eVal += 1.0 / factorialVal;
     }
-    return eValues[n];
+    return eVal;
 }
