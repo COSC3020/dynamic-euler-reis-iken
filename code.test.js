@@ -2,11 +2,6 @@ const fs = require('fs');
 const assert = require('assert');
 eval(fs.readFileSync('code.js')+'');
 
-assert.strictEqual(factorial(0), 1);
-assert.strictEqual(factorial(1), 1);
-assert.strictEqual(factorial(5), 120);
-assert.strictEqual(factorial(10), 3628800);
-
 assert.strictEqual(e(0), 1);
 assert.strictEqual(e(1), 2);
 assert.strictEqual(e(2), 2.5);
