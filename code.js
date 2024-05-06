@@ -1,9 +1,9 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
-}
-
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+    let eVal = 1;
+    let factorialVal = 1;
+    for (let i = 1; i <= n; i++) {
+        factorialVal *= i;
+        eVal += 1.0 / factorialVal;
+    }
+    return eVal;
 }
