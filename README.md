@@ -21,4 +21,4 @@ What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 **MY ANSWER:**
 
-My implementation has a loop in which the factorial function is called, which also contains a loop of length n. The other operations done inside the e function take up mere constant time. Thus, the worst-case time complexity of my algorithm is $\Theta(n)$
+My implementation simply contains a loop of length n. The other operations done inside the e function take up mere constant time. Thus, the worst-case time complexity of my algorithm is $\Theta(n)$
